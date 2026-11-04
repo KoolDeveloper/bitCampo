@@ -51,5 +51,8 @@
 	"imports": {
 		"#lib": "./src/lib/index.js",
 		"#lib/*": "./src/lib/*"
+	},
+	"dependencies": {
+		"nes.css": "^2.3.0"
 	}
 }

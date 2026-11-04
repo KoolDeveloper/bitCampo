@@ -1,2 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import 'tailwindcss';
+@import 'nes.css/css/nes.min.css';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-main: 'Press Start 2P', monospace;
+}
+
+[data-theme='dark'] {
+	/* Base */
+	--background: #1a1c2c;
+	--surface: #2d334a;
+	--card: #3b4058;
+
+	/* Text */
+	--foreground: #f4f4d4;
+	--muted: #b5b6a4;
+
+	/* Brand */
+	--primary: #6daa2c;
+	--primary-hover: #4e6a22;
+
+	/* States */
+	--success: #8ea822;
+	--warning: #d3a25f;
+	--danger: #b13e53;
+
+	/* Extras */
+	--border: #566c86;
+	--accent: #41a6f6;
+}
+
+[data-theme='light'] {
+	/* Base */
+	--background: #f4f4d4;
+	--surface: #ded9a0;
+	--card: #ece8c2;
+
+	/* Text */
+	--foreground: #2d334a;
+	--muted: #566c86;
+
+	/* Brand */
+	--primary: #4e6a22;
+	--primary-hover: #3b4d1b;
+
+	/* States */
+	--success: #6daa2c;
+	--warning: #d3a25f;
+	--danger: #b13e53;
+
+	/* Extras */
+	--border: #8d9aa0;
+	--accent: #41a6f6;
+}
+
+:root {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-main);
+	min-height: 100vh;
+}
